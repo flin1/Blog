@@ -1,0 +1,61 @@
+   .header {
+        padding: 10px;
+        text-align: center;
+        color: black;
+        font-size: 30px;
+        background-color:white;
+       
+      }
+    #title{
+          font-family:'Abril Fatface', cursive;
+          color:#2a2a2a;
+          text-align: center;
+        
+    }
+    .subhead{
+        opacity: 0.7;
+        text-align: center;
+
+    }
+    .hoverli{
+        display: inline;
+       font-family: 'Rokkitt', serif;
+        padding: 20px;
+        font-size: 17px;
+        margin:10px;
+        color:black; 
+    }
+    .file{
+        text-decoration: none;
+        outline: none;
+    }
+    a{
+        color: black;
+    }
+    hr{
+        color:black;
+        margin:10px;
+    }     
+    #head{
+          text-decoration: none;
+          outline: none;
+    }
+    .headcontent{
+        font-family: 'Crimson Text', serif;
+    }
+    .subcontent{
+        font-family: 'Literata', serif;
+    }
+    .post{
+        font-family: 'Roboto Slab', serif;
+    }
+    .body{
+      color:black;
+      padding:60px;
+    }
+    .menu{
+      display: inline;
+      list-style:none;
+      margin:0;
+      padding:0;
+    }
