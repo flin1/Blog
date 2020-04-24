@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Blog</title>
+    <title>faysic.</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Crimson+Text|Darker+Grotesque:300|Literata|Playfair+Display|Roboto+Slab|Tenor+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nixie+One|Rokkitt|Slabo+27px&display=swap" rel="stylesheet">
     <link href = "style.css" rel= "stylesheet" type = "text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+     </script>
   </head>
   <body>
 
@@ -18,44 +19,44 @@
       <h1 id = "title"><a href = "index.html" id = "head">faysic.</a></h1>
     <div class = "subhead">
       <hr>
-      <ul class = "menu">
+      <ul id ="headlist">
         <li class = "hoverli" id = "about"><a class = "file" href =      "about.html">ABOUT</a></li>
+        <li class = "hoverli"><a class = "file" href = "blog.html">BLOG</a></li>
 
 
 
+        <li class = "hoverli" id = "drop"><a class = "file" href = "interests.html">INTERESTS</a>
+         <ul class = "dropdown">
+            <li><a class = "file" href = "knit.html">Knit + Crochet</a></li>
+            <li><a class = "file" href = "embroidery.html">Embroidery</a></li>
+            <li><a class = "file" href = "cs.html">CS</a></li>
+         </ul>
+       </li>
 
 
 
-      <li class = "hoverli"><a class = "file" href = "blog.html">BLOG</a></li>
+        <li class = "hoverli"><a class = "file" href = "shop.html">SHOP</a></li> 
+        <li class = "hoverli"><a class = "file" href = "contact.html">CONTACT</a></li>
+       
+       
+   
+      </ul> 
      
-      <li class = "hoverli"><a class = "file" href = "interests.html">INTERESTS</a></li>
-     
-      <li class = "hoverli"><a class = "file" href = "shop.html">SHOP</a></li>
-     
-      <li class = "hoverli"><a class = "file" href = "contact.html">CONTACT</a></li>
-      <br>
-      <hr>
+       <hr>
     </div>
     </div>
     <div class = "body">
      <div class = "banner">
 
      </div>
-     <div class = "">
-    </div>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+<script>
   $(document).ready(function(){
-    $(".hoverlinks").hover(
-      function () {
-        $('ul.file_menu').slideDown('medium');
-     }, 
-      function () {
-        $('ul.file_menu').slideUp('medium');
-    }
-);
-
+     $("#drop").hover(function(){
+   $(".dropdown", this).slideDown(100);
+ }, function(){
+    $(".dropdown", this).stop().slideUp(100);
   });
-});
-   </script>
+ });
+</script>
   </body>
 </html>

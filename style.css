@@ -24,6 +24,8 @@
         font-size: 17px;
         margin:10px;
         color:black; 
+       list-style:none;
+      
     }
     .file{
         text-decoration: none;
@@ -31,6 +33,7 @@
     }
     a{
         color: black;
+        text-decoration:none;
     }
     hr{
         color:black;
@@ -58,4 +61,25 @@
       list-style:none;
       margin:0;
       padding:0;
+     
     }
+    .dropdown{ 
+ display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ list-style-type: none;
+
+    }
+.hoverli a:hover {
+	    background:	#D3D3D3;
+ position:relative;
+    display:inline-block;
+
+    }
+#headlist{
+  list-style-type: none;
+}
+   
+

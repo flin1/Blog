@@ -7,7 +7,6 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Crimson+Text|Darker+Grotesque:300|Literata|Playfair+Display|Roboto+Slab|Tenor+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nixie+One|Rokkitt|Slabo+27px&display=swap" rel="stylesheet">
     <link href = "style.css" rel= "stylesheet" type = "text/css" />
@@ -18,39 +17,34 @@
       <h1 id = "title"><a href = "index.html" id = "head">faysic.</a></h1>
     <div class = "subhead">
       <hr>
-       
-        <li class = "hoverlinks" id = "about"><a class = "file" href =      "about.html">ABOUT</a></li>
+      <ul class = "menu">
+        <li class = "hoverli" id = "about"><a class = "file" href =      "about.html">ABOUT</a></li>
+      <li class = "hoverli"><a class = "file" href = "blog.html">BLOG</a></li>
+      
+      <li class = "hoverli"><a class = "file" href = "interests.html">INTERESTS</a>
+        <ul class = "submenu">
+          <li><a class = "file" href = "knit.html">Knit + Crochet</a></li>
+          <li><a class = "file" href = "embroidery.html">Embroidery</a></li>
+          <li><a class = "file" href = "cs.html">CS</a></li>
+        </ul>
+      </li>
 
-      <h3 class = "hoverlinks"><a class = "file" href = "blog.html">BLOG</a></h3>
-     
-      <h3 class = "hoverlinks"><a class = "file" href = "interests.html">INTERESTS</a></h3>
-     
-      <h3 class = "hoverlinks"><a class = "file" href = "shop.html">SHOP</a></h3>
-     
-      <h3 class = "hoverlinks"><a class = "file" href = "contact.html">CONTACT</a></h3>
+      <li class = "hoverli"><a class = "file" href = "portfolio.html">PORTFOLIO</a></li>
+      <li class = "hoverli"><a class = "file" href = "shop.html">SHOP</a></li> 
+      <li class = "hoverli"><a class = "file" href = "contact.html">CONTACT</a></li>
       <br>
       <hr>
+      </ul>
     </div>
     </div>
     <div class = "body">
      <div class = "banner">
 
      </div>
-     <div class = "">
-    </div>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-  $(document).ready(function(){
-    $(".hoverlinks").hover(
-      function () {
-        $('ul.file_menu').slideDown('medium');
-     }, 
-      function () {
-        $('ul.file_menu').slideUp('medium');
-    }
-);
-
+    $('.menu ul li').hover(function() {
+      $(this).children('ul').stop(true, false, true).slideToggle(300);
   });
-});
    </script>
   </body>
 </html>
